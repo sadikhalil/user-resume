@@ -1,0 +1,64 @@
+body{ 
+     padding-top: 1em;
+     padding-left: 4em;
+     padding-right: 4em;
+     padding-bottom: 1em;
+     display:flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: center;
+     background-image:url(image.png); 
+     background-size: 100vw 250vh;
+     background-repeat: no-repeat;
+    
+}
+ 
+h1{
+    text-align: center;
+    text-decoration: 2px solid underline;
+    color:rgb(49, 49, 182);
+    font-family: sans-serif;
+}
+h3{
+    text-align: left;
+    text-decoration: 1px solid ;
+    color:mediumvioletred
+}
+label{
+    color:rgb(109, 62, 1);
+    display: block;
+    margin-bottom: 0.75em;
+    font-size: 1.1em;
+    font-weight: bold; 
+    width: fit-content;
+    box-sizing: border-box;
+
+} 
+textarea{
+    height:130px;
+    border-radius: 15px;
+}
+input[type="text"],input[type="email"],input[type="url"],textarea{
+width: 100%;
+padding: 1.8em;
+margin-top: 0.5em;
+border-color:brown;
+border-style:solid 2px;
+box-sizing:border-box;
+
+}
+#information, #education,#experience, #skills{
+  
+    border-color:purple;
+    border-style: 4px solid;
+    border-style:ridge;
+    width:600px
+
+}
+
+#add-education,#add-experiences,#add-skills,#submit-form{
+    background-color:lightsalmon;
+    color:black;
+    height: 40px;
+    width:90px
+}
