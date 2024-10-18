@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><User-Resume></title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="script" href="main.ts">
+</head>
+
+<body>
+
+    <form id = "Shareable-Resume">
+<fieldset id="information">
+    <h1> Build Your Resume</h1>
+    <h3> Personal-Info:</h3>
+    <label for = "personal-Information"></label>
+    <input type="text" placeholder="Enter Your Name"id="userName" required>
+    <br><br>
+    <input type="file" placeholder="Upload Profile picture" id="photo" required> 
+    <br> 
+    <h3> Contact Info:</h3>
+    <label for = "mail"></label>
+    <input type="email" placeholder="Enter G-MAIL"id="user-Gmail" required>
+    <br>
+    <label for = "PhoneNumber"></label>
+    <input type="tel" placeholder="Enter phone Number"id="Phone-Number" required>
+<br>
+<label for="other-links"></label>
+<input type="url" placeholder="Enter url of other account like linkedin/github" id="Other-URL">
+</fieldset>
+<fieldset id="education">
+<h3>Education: </h3>
+<br>
+ <ul><label for="Education"></label>
+<li><input type="text" placeholder="Enter your Education" id=" user-education" required></li>
+<br>
+ <li><input type="text" placeholder="Enter Institute Name" id=" institute" required></li>  <br>
+ <li><input type="text" placeholder="Enter your gpa/grades" id=" GPA/GRADES" required></li>
+ </ul> <br>
+<button type="button"  id="add-education">add education</button>
+</fieldset>
+
+<fieldset id="experience">
+    <h3>Experience: </h3>
+    <br>
+  <ul>  <label for="Experience"></label>
+  <li> <input type="text" placeholder="Enter your Experiences" id=" add-experience" required></li> </ul>  <br>
+  <button type="button" id="add-experiences"> add experience</button>
+</fieldset>
+
+<fieldset id="skills">
+     <h3> skills:</h3>
+   <ul><label for="skills"></label>
+  <li> <input type="text" id="user-skills" placeholder="Enter Your Skills" required></li>
+   </ul> <br>
+  <button type ="button" id="add-skills" > add skills</button>
+
+<br><br>
+<button type="button" id="submit-form"> submit</button>
+</fieldset>
+    </form>
+
+
+
+    <div id=" Resume-Page" class="Resume-Builded">
+
+    <div id="resume-content" class=" reume-content">
+        <h1 id="reume-name"></h1>
+        <img id="reume-picture" class=" reume-photo" src="" alt="photo">
+        <p id="userMail"> </p>
+        <p id=" UserPhoneNo"></p>
+        <p id="user-bio-links"></p>
+
+        <h2> Education</h2>
+        <p id="user-degree"></p>
+        <p id="user-institute"></p>
+        <p id="user-result"></p>
+
+        <h2> Experience</h2>
+        <p id=" user-job-experience"></p>
+
+        <h2> Skills</h2>
+        <p id="user-skills"></p>
+    </div>
+    </div>
+    <div id="buttons">
+        <button id="edit-resume">Edit</button>
+        <button id="back-to-home" onclick="window.loaction.href='index.html' ">Back To Home</button>
+        <button id=" share-resume"> Share Link</button>
+        <button id ='download-pdf'> Download-form</button>
+    </div>
+</body>
+
+</html>
